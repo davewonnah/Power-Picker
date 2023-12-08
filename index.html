@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CS50 FINAL Project</title>
+</head>
+<body>
+    <body>
+    <!-- Main container div -->
+    <div class="container">
+        <!-- Form container div -->
+        <div class="form-container">
+            <!-- Image and logo container -->
+            <img src="./images/Screenshot_from_2023-12-05_02-49-30-removebg-preview (1).png" alt="">
+            <div class="logo-container">
+                <!-- Logo contents (Welcome message and description) -->
+                <div class="logo-contents">
+                    <h1>Welcome Back!</h1>
+                    <p id="title">Welcome back to POWERPICKER's Online Voting System, please log in to vote in your preferred candidate</p>
+                </div>
+
+                <!-- Login form -->
+                <form>
+                    <!-- Input containers for Voter ID, Admin ID, and Password -->
+                    <div class="input-container">
+                        <!-- user input for ID and password -->
+                        <div class="input-feild" id="name-feild">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" id="name-input" placeholder="Voters ID No.">
+                        </div>
+
+                        <div class="input-feild">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="text" placeholder="Password" id="user-password">
+                        </div>
+                        <!-- Admin input for ID and password -->
+                        <div class="input-feild" id="admin-feild">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" placeholder="Admin ID No.">
+                        </div>
+                        <div class="input-feild" id="admin-feild">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="text" placeholder="admin-password" >
+                        </div>
+                    </div>
+
+                    <!-- Button container with Login and Login as Admin buttons -->
+                    <div class="btn-container">
+                        <button type="button" id="signin-btn">Login</button>
+                        <button type="button" class="disable" id="signin-admin">Login as Admin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script tag linking to an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -34,6 +34,9 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
+    transition: var(--trans-02);
+    white-space: nowrap;
+    opacity: 1;
 }
 
 .sidebar header{
@@ -59,6 +62,25 @@ header .image-text .header-text{
     margin-top: -2px;
     font-weight: 300;
     font-size: x-small;
+}
+
+
+
+.sidebar header .toggle{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: (-50%);
+
 }
 
 .sidebar li{
@@ -118,7 +140,7 @@ header .image-text .header-text{
     width: 250px;
     padding: 10px 14px;
     background-color: var(--sidebar-color);
-    /* background-color: black; */
+    transition: var(--trans-03);
 }
 
 .sidebar .image-text img{
@@ -133,5 +155,13 @@ header .image-text .header-text{
 .sidebar header .image-text{
     display: flex;
     align-items: center;
+}
+
+.sidebar.close{
+    width: 100px;
+}
+
+.sidebar.close .text{
+    opacity: 0;
 }
 

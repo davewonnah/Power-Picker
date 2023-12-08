@@ -119,6 +119,19 @@ input{
     transition: var(--trans-00);
 }
 
+.btn-container a{
+    text-decoration: none;
+    flex-basis: 48%;
+    text-align: center;
+    background-color: var(--sidebar-color);
+    color: var(--body-color);
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--trans-00);
+    color: var(--body-color);
+}
+
 .btn-container button.disable{
     background-color: var(--secondary-color);
     color: var(--sidebar-color);

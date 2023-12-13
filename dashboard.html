@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
     <title>CS50 FINAL Project</title>
 </head>
 <body>
@@ -70,6 +74,94 @@
             </div>
         </div>
     </nav>
+    <!-- =========================== main contents ====================================== -->
+    <div class="main-container active">
+        <!-- ======================== main header ======================================= -->
+        <div class="main-header">
+            <div class="search">
+                <label for="">
+                    <input type="text" placeholder="Search here">
+                    <i class='bx bx-search-alt-2'></i>
+                </label>
+            </div>
+            <div class="user-img-container">
+                <i class='bx bxs-cog'></i>
+                <i class='bx bxs-bell-ring'></i>
+                <div class="user-img">
+                    <img src="./images/user.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="welcome">
+            <h2>Dashboard</h2>
+        </div>
+
+        <!-- ============================ main first section ================================ -->
+        <div class="card-box">
+            <div class="card">
+                <div>
+                    <div class="numbers">1500</div>
+                    <div class="cardName">Total voters</div>
+                </div>
+                <div class="iconbox">
+                    <i class='bx bxs-user-account'></i>
+                </div>
+            </div>
+
+             <div class="card">
+                <div>
+                    <div class="numbers">500</div>
+                    <div class="cardName">Total Candidates</div>
+                </div>
+                <div class="iconbox">
+                    <i class='bx bx-user'></i>
+                </div>
+            </div>
+
+             <div class="card">
+                <div>
+                    <div class="numbers">December 20, 2023</div>
+                    <div class="cardName">Election Start Date</div>
+                </div>
+                <div class="iconbox">
+                    <i class='bx bx-time'></i>
+                </div>
+            </div>
+
+             <div class="card">
+                <div>
+                    <div class="numbers">December 20, 2023</div>
+                    <div class="cardName">Election End Date</div>
+                </div>
+                <div class="iconbox">
+                    <i class='bx bx-time'></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- chart contents -->
+        <div class="charts">
+            <div class="charts-card">
+                <h2 class="chart-title">Top 3 Canidates</h2>
+                <div id="bar-chart">
+                    <canvas id="myChart"></canvas>
+                    
+                </div>
+            </div>
+
+            <div class="charts-card">
+                <h2 class="chart-title">Live voting</h2>
+                <div id="bar-chart">
+                    <canvas id="pie-chart"></canvas>
+                    
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!-- chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- costum JS -->
+    <script src="chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

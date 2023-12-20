@@ -24,7 +24,6 @@
 
 body{
     height: 100vh;
-    /* background-color: var(--body-color); */
 }
 
 /* ===== form styling starts here ===== */
@@ -158,4 +157,3 @@ input{
     color: var(--sidebar-color);
     cursor: pointer;
 }
-

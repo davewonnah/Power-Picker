@@ -10,7 +10,7 @@ let name_input = document.querySelector("#name-input");
 let user_contents = document.querySelector("#user-contents");
 let admin_contents = document.querySelector("#admin-contents");
 let sidebar = document.querySelector(".sidebar");
-let main = document.querySelector(".main-container")
+let main = document.querySelector(".main-container");
 
 let toggle = document.querySelector(".toggle");
 let side_bar = document.querySelector(".sidebar");
@@ -47,34 +47,16 @@ function goToPage(page) {
     window.location.href = page;
 }
 
+// function validate(){
+//   var user_feild = document.getElementById("name-input").value;
+//   var user_password = document.getElementById("user-password").value;
 
-
-// ============================= bar chart =============================
-
-
-var barchartoptions = {
-  series: [{
-  data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
-}],
-  chart: {
-  type: 'bar',
-  height: 350
-},
-plotOptions: {
-  bar: {
-    borderRadius: 4,
-    horizontal: true,
-  }
-},
-dataLabels: {
-  enabled: false
-},
-xaxis: {
-  categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-    'United States', 'China', 'Germany'
-  ],
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#bar-chart"), options);
-chart.render();
+//   if(user_feild == "Dave" && user_password == "123"){
+//       alert("Login successully")
+//       return false;
+//   }
+//   else
+//   {
+//     alert("Please fill in the above feilds");
+//   }
+// }

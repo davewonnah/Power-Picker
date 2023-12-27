@@ -65,8 +65,66 @@
 //     },
 // };
 
+
+
 // console.log(electionCommission.election_id.election);
 // console.log(electionCommission.election_id.candidates);
 // console.log(electionCommission.election_id.voters);
+
+// let submit_election_btn = document.getElementById('create-election-btn');
+
+// submit_election_btn.addEventListener("click", function(event) {
+//     // Prevent the default form submission behavior
+//     event.preventDefault();
+
+//     // Get all input elements inside the form
+//     let inputFields = document.querySelectorAll('.create-election-info input, .create-election-info textarea');
+
+//     // Check each input field
+//     let allInputsFilled = true;
+
+//     // Create an object to store the form data
+//     let formData = {};
+
+//     for (let i = 0; i < inputFields.length; i++) {
+//         let field = inputFields[i];
+//         if (field.value.trim() === '') {
+//             alert("Please fill in all the required fields.");
+//             allInputsFilled = false;
+//             break; // Exit the loop on the first empty field
+//         } else {
+//             // Add the field value to the formData object
+//             formData[field.id] = field.value;
+//         }
+//     }
+
+//     // If all inputs are filled, proceed with form submission or other actions
+//     if (allInputsFilled) {
+//         alert("Form submitted successfully!");
+//     }
+// });
+
+
+let submit_election_btn = document.getElementById('create-election-btn');
+
+submit_election_btn.addEventListener("click", function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Get all input elements inside the form
+    let inputFields = document.querySelectorAll('.create-election-info input, .create-election-info textarea');
+
+    // Create an object to store the form data
+    let formData = {};
+
+    // Populate the formData object with input values
+    inputFields.forEach(field => {
+        formData[field.id] = field.value;
+    });
+
+    // Log the formData object to the console (you can modify this part)
+    console.log(formData);
+
+});
 
 

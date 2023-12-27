@@ -50,12 +50,13 @@
 
                     <!-- Button container with Login and Login as Admin buttons -->
                     <div class="btn-container" id="user-contents">
-                        <button type="button" id="signin-btn" onclick="goToPage('dashboard.html')">Login</button>
-                        <button type="button" class="disable" id="signin-admin" >Login as Admin</button>
+                        <a href="dashboard.html" id="user-signin-btn">Login</a>
+                        <a href="" class="disable" id="signin-admin">Login as Admin</a>
+                        <!-- <button type="button" id="signin-btn">Login</button> -->
                     </div>
                     <div class="btn-container" id="admin-contents">
-                        <button type="button" id="signin-btn" onclick="validate()" onclick="goToPage('dashboard.html')">Login</button>
-                        <button type="button" class="disable" id="signin-user" onclick="goToPage('index.html')">Login as Voter</button>
+                        <button type="button" id="signin-btn" onclick="validate()">Login</button>
+                        <button type="button" class="disable" id="signin-user">Login as Voter</button>
                     </div>
                 </form>
             </div>

@@ -108,7 +108,7 @@ input{
     display: flex;
     justify-content: space-between;
 }
-
+/* 
 .btn-container button{
     flex-basis: 48%;
     background-color: var(--sidebar-color);
@@ -119,16 +119,19 @@ input{
     outline: 0;
     cursor: pointer;
     transition: var(--trans-00);
-}
+} */
 
 .btn-container a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     flex-basis: 48%;
-    text-align: center;
+    align-items: center;
     background-color: var(--sidebar-color);
     color: var(--body-color);
     height: 40px;
     border-radius: 20px;
+    font-size: 13px;
     cursor: pointer;
     transition: var(--trans-00);
     color: var(--body-color);

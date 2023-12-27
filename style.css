@@ -97,7 +97,6 @@ header .image-text .header-text{
 }
 
 .sidebar .menu-bar{
-    /* background-color: crimson; */
     height: calc(100% -50px);
     display: flex;
     flex-direction: column;
@@ -168,6 +167,9 @@ header .image-text .header-text{
 
 /* ===== styling of main contents starts here ===== */
 .main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     width: calc(100% - 284px);
     left: 270px;
@@ -220,18 +222,6 @@ header .image-text .header-text{
     object-fit: cover;
 }
 
-/* .user-img i{
-    position: absolute;
-    top: 0;
-    font-size: xx-large;
-    color: var(--sidebar-color);
-    right: 0;
-    margin-left: 50px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
 .search{
     width: 400px;
     margin: 0 10px;
@@ -277,7 +267,6 @@ header .image-text .header-text{
 }
 
 .card{
-    /* position: relative; */
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -291,10 +280,6 @@ header .image-text .header-text{
     position: relative;
     color: var(--text-color);
 }
-
-/* .cardName{
-
-} */
 
 .iconbox{
     font-size: 1.5rem;
@@ -314,6 +299,7 @@ header .image-text .header-text{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .charts-card{
@@ -353,12 +339,10 @@ header .image-text .header-text{
 .create-election{
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(./images/pexels-edmond-dantès-7103129.jpg );
     background-size: contain;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px 4px;
-    height: 400px;
     margin-top: 12px;
 }
 
@@ -375,6 +359,51 @@ header .image-text .header-text{
     max-width: 450px;
     border-radius: 16px;
     position: relative;
+}
+
+
+.create-election-info input{
+    width: 100%;
+    background-color: var(--body-color);
+    border: none;
+    margin-bottom: 6px;
+    color: var(--sidebar-color);
+    outline: none;
+    padding: 18px 15px;
+}
+
+.form-group{
+    /* background-color: crimson; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    border: none;
+    padding: 18px 15px;
+}
+
+.create-election-info button{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    flex-basis: 48%;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: var(--sidebar-color);
+    color: var(--body-color);
+    height: 90px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    font-size: 13px;
+    cursor: pointer;
+    transition: var(--trans-00);
 }
 
 /* ============ footer styles ==================== */
